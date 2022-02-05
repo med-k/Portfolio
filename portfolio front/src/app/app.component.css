@@ -1,0 +1,19 @@
+.nav {
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.nav .nav-link {
+  color: red;
+  font-size: 24px;
+}
+.nav .nav-link:hover {
+  color: rgb(53, 5, 5);
+  font-size: 28px;
+  text-decoration: underline;
+}
+.container-fluid {
+  padding: 0%;
+  margin: 0%;
+}

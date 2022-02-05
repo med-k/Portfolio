@@ -12,6 +12,7 @@ public class UserController {
     private final UserService userService;
 
     //get User by id
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping(value = "/getUser/{id}")
     @ResponseBody
     public User getUserById(@PathVariable("id") int id) {

@@ -3,6 +3,7 @@ package kbaier.portfolio.models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.List;
@@ -21,10 +22,14 @@ public class User {
     private String name;
     @Column(unique=true)
     private String email;
-    private String picture;
+    @Lob
+    @Type(type = "org.hibernate.type.BinaryType")
+    private byte[] picture;
+    @Column(columnDefinition="TEXT")
     private String about;
     private int age;
     private String address;
+    @Column(columnDefinition="TEXT")
     private String Motivation;
 
     /*association*/

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -22,8 +23,11 @@ public class Experience {
     @Temporal(TemporalType.DATE)
     private Date endDate;
     private String establishment;
+    @Column(columnDefinition="TEXT")
     private String details;
-    private String picture;
+    @Lob
+    @Type(type = "org.hibernate.type.BinaryType")
+    private byte[] picture;
     @JsonIgnore
     @ManyToOne
     private User user;

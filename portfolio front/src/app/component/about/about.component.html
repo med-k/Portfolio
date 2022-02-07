@@ -1,27 +1,22 @@
-<!--<section class="about">
-  <img src="assets/fondacceuil.jpg" alt="" />
-  <div class="aboutContent">
-    <h1>Kbaier Mohamed {{ u.name }}</h1>
-    <p>fgjksjkfhkjzajkfhjkhfjkzajk nfjkjka</p>
-  </div>
-</section>-->
 <section class="about-content">
   <div class="heading">
     <img class="me-image" src="{{ 'data:image/jpg;base64,' + u.picture }}" />
     <h1>{{ u.name }}</h1>
     <p>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      {{ u.about }}
     </p>
-    <h3 class="cd-headline clip is-full-width">
-      <span>Lorem ipsum dolor sit amet </span>
-      <span class="cd-words-wrapper">
-        <b class="is-visible">Web Developer</b>
-        <b>Web Design</b>
-        <b>Creative Design</b>
-        <b>Graphic Design</b>
+    <h3 class="cd-headline clip">
+      <span>
+        <b class="is-visible mail">{{ u.email }}</b>
       </span>
+      <br />
+      <span>
+        <b class="is-visible">Age_{{ u.age }}</b> </span
+      ><br />
+      <br />
+      <span>
+        <b class="is-visible">{{ u.address }}</b> </span
+      ><br />
     </h3>
   </div>
 </section>
-<!--<img src="{{ 'data:image/jpg;base64,' + u.picture }}" />-->

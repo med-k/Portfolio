@@ -12,7 +12,7 @@ export class User {
   age!: number;
   address!: string;
   motivation!: string;
-  education: Education[] = [];
+  educations: Education[] = [];
   languages: Language[] = [];
   experiences: Experience[] = [];
   links: Link[] = [];

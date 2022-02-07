@@ -1,0 +1,24 @@
+.card-body-educ {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: large;
+}
+.h4-educ {
+  color: #4a4843;
+  font-size: 42px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.card-body-educ,
+P:hover,
+h1:hover,
+h3:hover {
+  font-size: 150%;
+}
+.card-educ {
+  margin-top: 5px;
+}

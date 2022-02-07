@@ -1,4 +1,3 @@
-import { Skill } from './../../models/skill';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from './../../services/user.service';
 import { User } from './../../models/user';

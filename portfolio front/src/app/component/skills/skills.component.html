@@ -1,10 +1,43 @@
-<p>skills works!</p>
-<h1>{{ u.name }}</h1>
-<h2>7lili</h2>
-<div>
-  <tr *ngFor="let s of u.skills">
-    <td>{{ s.title }}</td>
-    <hr />
-    <td>{{ s.level }}</td>
-  </tr>
+<div class="content">
+  <div class="about-section">
+    <div class="container">
+      <div class="row">
+        <h1 class="h1-skills">COMPETENCES</h1>
+        <div class="col-md-6" *ngFor="let s of u.skills">
+          <div class="polls">
+            <div class="poll">
+              <div class="poll-desc">
+                <h4>{{ s.title }}</h4>
+              </div>
+              <div class="percentage">
+                <p>{{ s.level }}%</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="skills">
+              <div style="width: {{ s.level }}%"></div>
+            </div>
+          </div>
+        </div>
+        <h1 class="h1-skills">language</h1>
+        <div class="col-md-6" *ngFor="let l of u.languages">
+          <div class="polls">
+            <div class="poll">
+              <div class="poll-desc">
+                <h4>{{ l.language }}</h4>
+              </div>
+              <div class="percentage">
+                <p>{{ l.level }}%</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="skills">
+              <div style="width: {{ l.level }}%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
 </div>

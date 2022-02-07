@@ -1,1 +1,25 @@
-<p>experience works!</p>
+<div class="section lb">
+  <div class="container">
+    <div class="section-title">
+      <h3>Experiences</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-lg-4" *ngFor="let e of u.experiences">
+        <div class="post-box">
+          <div class="post-thumb">
+            <img src="assets/test.jpg" class="img-fluid" />
+          </div>
+          <div class="post-info">
+            <h4 style="text-align: center">{{ e.title }}</h4>
+            <p class="card-body-exp">
+              Start: &nbsp;{{ e.startDate }} <br />
+              End: &nbsp;{{ e.endDate }}
+            </p>
+            <p style="color: rgb(0, 0, 0)">{{ e.details }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

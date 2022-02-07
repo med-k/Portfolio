@@ -1,7 +1,7 @@
 export class Education {
   id!: number;
   title!: string;
-  startDate!: string;
-  endDate!: string;
+  startDate!: Date;
+  endDate!: Date;
   establishment!: string;
 }

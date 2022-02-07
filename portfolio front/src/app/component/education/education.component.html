@@ -1,1 +1,23 @@
-<p>education works!</p>
+<div class="section">
+  <div class="container">
+    <div class="h4-educ text-center">Formation</div>
+    <div class="card-educ" *ngFor="let e of u.educations">
+      <div class="row">
+        <div class="col-md-3" style="background: #4d4b4b">
+          <div class="card-body-educ">
+            <p class="card-body-educ-P">
+              Start &nbsp;{{ e.startDate }} <br />
+              End &nbsp;{{ e.endDate }}
+            </p>
+          </div>
+        </div>
+        <div class="col-md-9" style="background: #85a8b8">
+          <div class="card-body-educ">
+            <h1>{{ e.title }}</h1>
+            <h3>{{ e.establishment }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
